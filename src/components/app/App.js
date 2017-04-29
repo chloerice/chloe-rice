@@ -16,16 +16,16 @@ const App = props => (
     <nav>
       <ul className='navbar'>
         <li className='navbar-item'>
-          <NavLink to='/' isActive={onlyOneActiveMatch}>Home</NavLink>
+          <NavLink to='/blog' isActive={onlyOneActiveMatch}>Blog</NavLink>
+        </li>
+        <li className='navbar-item'>
+          <NavLink to='/projects' isActive={onlyOneActiveMatch}>Projects</NavLink>
         </li>
         <li className='navbar-item'>
           <NavLink to='/about' isActive={onlyOneActiveMatch}>About</NavLink>
         </li>
         <li className='navbar-item'>
-          <NavLink to='/projects'>Projects</NavLink>
-        </li>
-        <li className='navbar-item'>
-          <NavLink to='/blog' isActive={onlyOneActiveMatch}>Blog</NavLink>
+          <NavLink to='/' isActive={onlyOneActiveMatch}>Home</NavLink>
         </li>
       </ul>
     </nav>
