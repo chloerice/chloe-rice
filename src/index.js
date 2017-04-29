@@ -21,4 +21,6 @@ const App = () => (
   </Router>
 )
 
+export default App
+
 render(<App />, document.getElementById('root'))
