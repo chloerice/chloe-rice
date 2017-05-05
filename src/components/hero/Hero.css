@@ -4,6 +4,27 @@
   text-align: left;
   color: #DDA77B;
   padding: 80px 25px 10px 25px;
+  overflow-y: visible;
+}
+
+.mobile-Hero-text {
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 10px;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 374px) {
+  .mobile-Hero-illustration {
+    margin-top: -20px;
+  }
+
+  .mobile-Hero-text {
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 -10px;
+  }
 }
 
 .Hero-text {
@@ -15,6 +36,6 @@
   padding: 10px 25px;
 }
 
-.me-eyes-forward {
-
+.twirl:hover {
+  cursor: hand;
 }
