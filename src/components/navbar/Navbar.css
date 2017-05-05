@@ -1,0 +1,38 @@
+.navbar-default {
+  border: none;
+  background: #71677C;
+}
+
+.navbar-default .navbar-brand {
+  color: #DDA77B;
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 5vmin;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #DDA77B;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #9DE8C7;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: none;
+  border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #DDA77B;
+}
+
+.navbar-fixed-top .navbar-collapse {
+  text-align: center;
+  font-size: larger;
+  max-height: none;
+  border: none;
+}

@@ -1,8 +1,38 @@
-.About {
-  text-align: center;
+
+#About::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 85px 85px 95vw;
+  border-color: transparent transparent #945D5E transparent;
+  background: #71677C;
+  -webkit-transform:rotate(360deg)
+  /* ^improves anti-aliasing */
+}
+
+#About {
+  position: relative;
+  top: -40px;
+  background: #945D5E;
+  height: 100vh;
+  text-align: left;
+  color: #A99F96;
 }
 
 .About-header {
-  padding-top: 75px;
-  color: #000000;
+  font-size: 5vmin;
+  font-family: 'Londrina Shadow', cursive;
+}
+
+.About-text {
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.About-illustration {
+
+}
+
+.me-eyes-forward {
+
 }

@@ -1,0 +1,20 @@
+#Home {
+  background: #71677C;
+  min-height: 95vh;
+  text-align: left;
+  color: #DDA77B;
+  padding: 80px 25px 10px 25px;
+}
+
+.Hero-text {
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.Hero-illustration {
+  padding: 10px 25px;
+}
+
+.me-eyes-forward {
+
+}

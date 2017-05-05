@@ -1,12 +1,33 @@
-.Projects {
-  text-align: center;
+#Projects::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 100px 85px;
+  border-color: transparent transparent #DDA77B transparent;
+  background: #945D5E;
+  -webkit-transform:rotate(360deg)
+  /* ^improves anti-aliasing */;
+}
+
+#Projects {
+  position: relative;
+  top: -140px;
+  background: #DDA77B;
+  height: 100vh;
+  text-align: left;
+  color: #37123C;
 }
 
 .Projects-header {
-  padding-top: 75px;
-  color: #000000;
+  font-size: 5vmin;
+  font-family: 'Londrina Shadow', cursive;
 }
 
-.Projects-intro {
-  font-size: large;
+.Projects-text {
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.Projects-illustration {
+
 }
