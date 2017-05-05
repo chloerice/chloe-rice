@@ -12,7 +12,7 @@ const heroText = {
   bike: "When I'm not coding, I love...riding my bike everywhere--near and far.",
   fruit: "When I'm not coding, I love...eating, growing and hunting for fruit.",
   sewing: "When I'm not coding, I love...making clothes (ask me about unitards!).",
-  macbook: "I'm a full stack web developer, specialized in building delightful user experiences for web and mobile with React."
+  macbook: "As a full stack web developer, I specialize in building delightful user experiences for web and mobile with React."
 }
 
 import './Hero.css'
