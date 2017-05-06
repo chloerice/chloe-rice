@@ -1,13 +1,11 @@
 
 #About::before {
-  z-index: -10;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 85px 85px 95vw;
-  border-color: transparent transparent #71677C transparent;
+  border-color: transparent transparent #945D5E transparent;
   background: #71677C;
-  border-style: inset;
   -webkit-transform:rotate(360deg)
   /* ^improves anti-aliasing */
 }
@@ -24,6 +22,7 @@
 .About-header {
   font-size: 7vmin;
   font-family: 'Londrina Shadow', cursive;
+  margin: 10px;
 }
 
 .About-text {

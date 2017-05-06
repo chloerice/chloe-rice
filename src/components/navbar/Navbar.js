@@ -7,7 +7,7 @@ const NavBar = props => (
   <Navbar fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href='#Home'>Chloé Rice, Interactive Developer</a>
+        <a href='#Home'>Chloé Rice, Web Developer</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
