@@ -1,4 +1,4 @@
-
+/* triangle! */
 #About::before {
   width: 0;
   height: 0;
@@ -11,10 +11,9 @@
 }
 
 #About {
-  position: relative;
-  top: -40px;
+  padding-bottom: 25px;
   background: #945D5E;
-  height: 100vh;
+  height: auto;
   text-align: left;
   color: #A99F96;
 }
@@ -22,18 +21,45 @@
 .About-header {
   font-size: 7vmin;
   font-family: 'Londrina Shadow', cursive;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .About-text {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Raleway', sans-serif;
+  line-height: 1.25em;
+  padding: 10px;
+  margin: 0px;
 }
 
-.About-illustration {
+@media only screen and (min-width: 768px) {
 
+  .About-header {
+    padding: 0 0 0 50px;
+  }
+
+  .About-text {
+    padding: 5px 50px;
+    margin: 10px;
+  }
 }
 
-.me-eyes-forward {
+/*  iPhone <= 5 fix (the IE of devices...)  */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 374px) {
 
+  .About-text {
+    font-size: 1.25em;
+    font-family: 'Raleway', sans-serif;
+    z-index: 10;
+    position: relative;
+    line-height: 1.25em;
+  }
+}
+
+.mobile-illustration {
+  z-index: 10;
+  position: relative;
+  margin: 15px;
 }

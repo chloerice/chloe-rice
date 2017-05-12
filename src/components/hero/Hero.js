@@ -3,19 +3,10 @@ import { Row, Col, Image } from 'react-bootstrap'
 
 import meEyesForward from '../../img/me-eyes-forward.svg'
 import meEyesLooking from '../../img/me-eyes-looking.svg'
-import heroIllustration from '../../img/macbook-center.svg'
-import mobileHeroIllustration from '../../img/mobile-hero.svg'
-
-const heroText = {
-  twirl: "When I'm not coding, I love...dancing with my hippo colored dog Twirl.",
-  ray: "When I'm not coding, I love...running trails with my husky Ray.",
-  bike: "When I'm not coding, I love...riding my bike everywhere--near and far.",
-  fruit: "When I'm not coding, I love...eating, growing and hunting for fruit.",
-  sewing: "When I'm not coding, I love...making clothes (ask me about unitards!).",
-  macbook: "As a full stack web developer, I build delightful user experiences for web and mobile. My specialities are Node.js and React.js."
-}
-
+import macBook from '../../img/macbook.svg'
+import mobileHero from '../../img/mobile-hero.svg'
 import './Hero.css'
+import resume from '../../../public/Chloe_Rice.pdf'
 
 export default class Hero extends Component {
 
@@ -26,36 +17,38 @@ export default class Hero extends Component {
     }
   }
 
-  chloeLookRight = thing => event => {
+  chloeLookRight = event => {
     this.setState({hovering: true})
   }
 
-  chloeLookForward = thing => event => {
+  chloeLookForward = event => {
     this.setState({hovering: false})
   }
 
   render() {
 
     return (
-      <Row id='Home'>
+      <Row id='Hero'>
         <Col xs={12} sm={12} md={12} lg={12}>
           <Row>
-            <Col className='mobile-Hero-illustration' xs={12} sm={12} mdHidden lgHidden>
+            <Col className='mobile-Hero-illustration' xs={12} smHidden mdHidden lgHidden>
               <Image
-                  onMouseEnter={this.chloeLookRight('macbook')}
-                  onMouseLeave={this.chloeLookForward('macbook')}
-                  onTouchStart={this.chloeLookRight('macbook')}
-                  onTouchEnd={this.chloeLookForward('macbook')}
-                  responsive
-                  src={mobileHeroIllustration}
-                  alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
-                />
-                <h2 className='mobile-Hero-text'>
-                  {heroText.macbook}
-                </h2>
+                responsive
+                src={mobileHero}
+                alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
+              />
+              <p className='mobile Hero-text'>
+                I build delightfully fast and interactive user experiences for web and mobile. My specialties are Node.js and React.js.
+              </p>
+              <p className='mobile Hero-text'>
+                I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with in NY or CA. <a href={resume} target='_blank'>This</a> is me on paper.
+              </p>
+              <p className='mobile Hero-text'>
+                I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
+              </p>
             </Col>
 
-            <Col className='Hero-illustration' xsHidden smHidden md={6} lg={6}>
+            <Col className='Hero-illustration' xsHidden sm={6} md={6} lg={6}>
               {
                 this.state.hovering
                 ? <Image
@@ -72,21 +65,53 @@ export default class Hero extends Component {
                   />
               }
             </Col>
+
             <Col className='Hero-illustration' xsHidden smHidden md={6} lg={6}>
               <Image
-                  onMouseEnter={this.chloeLookRight('macbook')}
-                  onMouseLeave={this.chloeLookForward('macbook')}
-                  onTouchStart={this.chloeLookRight('macbook')}
-                  onTouchEnd={this.chloeLookForward('macbook')}
-                  className='Hero-illustration'
-                  responsive
-                  src={heroIllustration}
-                  alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
-                />
-                <h2 className='Hero-text'>
-                  {heroText.macbook}
-                </h2>
+                onMouseEnter={this.chloeLookRight}
+                onMouseLeave={this.chloeLookForward}
+                onTouchStart={this.chloeLookRight}
+                onTouchEnd={this.chloeLookForward}
+                className='Hero-illustration'
+                responsive
+                src={macBook}
+                alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
+              />
+              <p className='Hero-text'>
+                As a full stack developer, I build delightfully fast and interactive user experiences for web and mobile. My specialities are Node.js and React.js.
+              </p>
+              <p className='Hero-text'>
+                I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with in New York. <a href={resume}>This</a> is me on paper.
+              </p>
+              <p className='Hero-text'>
+                I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
+              </p>
             </Col>
+
+            <Col className='tablet-Hero-illustration' xsHidden sm={6} mdHidden lgHidden>
+              <Image
+                onMouseEnter={this.chloeLookRight}
+                onMouseLeave={this.chloeLookForward}
+                onTouchStart={this.chloeLookRight}
+                onTouchEnd={this.chloeLookForward}
+                className='Hero-illustration'
+                responsive
+                src={macBook}
+                alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
+              />
+            </Col>
+            <Col className='tablet-Hero-illustration' xsHidden sm={12} mdHidden lgHidden>
+              <p className='tablet Hero-text'>
+                As a full stack developer, I build delightfully fast and interactive user experiences for web and mobile. My specialities are Node.js and React.js.
+              </p>
+              <p className='tablet Hero-text'>
+                I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with in New York. <a href={resume}>This</a> is me on paper.
+              </p>
+              <p className='tablet Hero-text'>
+                I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
+              </p>
+            </Col>
+
           </Row>
         </Col>
       </Row>

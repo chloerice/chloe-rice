@@ -6,6 +6,7 @@ body {
 a, a:hover, a:focus {
   text-decoration: none;
   color: #5CEDAE;
+  cursor: pointer;
 }
 
 a {

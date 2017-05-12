@@ -10,6 +10,16 @@
   margin: 10px 0px 0px 10px;
 }
 
+/*  tablet fix  */
+@media only screen
+and (min-width: 500px)
+and (max-width: 1024px) {
+
+  .navbar-default .navbar-brand {
+    font-size: 4vmin;
+  }
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #DDA77B;
   font-family: 'Raleway', sans-serif;

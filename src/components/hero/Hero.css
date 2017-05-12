@@ -1,45 +1,41 @@
-#Home {
+#Hero {
   background: #71677C;
-  min-height: 95vh;
+  height: auto;
   text-align: left;
   color: #DDA77B;
   padding: 80px 25px 10px 25px;
   overflow-y: visible;
-}
-
-.mobile-Hero-text {
-  font-size: 1.5em;
-  font-family: 'Raleway', sans-serif;
-  padding-top: 10px;
-  z-index: 10;
-  position: relative;
-}
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 374px) {
-  .mobile-Hero-illustration {
-    margin-top: -20px;
-  }
-
-  .mobile-Hero-text {
-    font-size: 1.25em;
-    font-family: 'Raleway', sans-serif;
-    margin: 0 -10px;
-    z-index: 10;
-    position: relative;
-  }
-}
-
-.Hero-text {
-  font-size: 2em;
   font-family: 'Raleway', sans-serif;
 }
 
 .Hero-illustration {
   padding: 10px 25px;
+  min-height: 40vh;
+  height: auto
 }
 
-.twirl:hover {
-  cursor: hand;
+.Hero-text {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.tablet {
+
+}
+
+.mobile {
+  margin: 0 -15px;
+}
+
+/*  iPhone <= 5 fix (the IE of devices...)  */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 374px) {
+
+  .mobile-Hero-text {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
 }
