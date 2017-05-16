@@ -1,4 +1,4 @@
-#Hero {
+#Home {
   background: #71677C;
   height: auto;
   text-align: left;
@@ -21,10 +21,6 @@
   margin: 0 10px;
 }
 
-.tablet {
-
-}
-
 .mobile {
   margin: 0 -15px;
 }
@@ -34,8 +30,12 @@
 and (min-device-width: 320px)
 and (max-device-width: 374px) {
 
-  .mobile-Hero-text {
+  .Hero-text {
     font-size: 1.25em;
-    line-height: 1.25em;
   }
+}
+
+.tablet-Hero-illustration {
+  width: 100%;
+  padding-top: 25px;
 }

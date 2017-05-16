@@ -1,5 +1,7 @@
 import React from 'react'
 import { Row, Col, Image } from 'react-bootstrap'
+import animalApparelHome from './animalapparel-home.png'
+import bodhiMap from './bodhi-map.png'
 
 import './Projects.css'
 
@@ -13,11 +15,21 @@ const Projects = props => (
           </Col>
         </Row>
         <Row>
-          <Col xs={12} sm={6} md={6} lg={6}>
-            <h2 className='Projects-text'>
-            </h2>
+          <Col  xs={12} sm={6} md={6} lg={6}>
+            <Image
+              className='Projects-thumbnail'
+              responsive
+              alt='Link to project: Bodhi'
+              src={bodhiMap}
+            />
           </Col>
-          <Col className='Projects-demo' xs={12} sm={6} md={6} lg={6}>
+          <Col xs={12} sm={6} md={6} lg={6}>
+            <Image
+              className='Projects-thumbnail'
+              responsive
+              alt='Link to project: Animal Apparel'
+              src={animalApparelHome}
+            />
           </Col>
         </Row>
       </Col>

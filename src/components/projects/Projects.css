@@ -11,9 +11,10 @@
 
 #Projects {
   background: #DDA77B;
-  height: 100vh;
+  height: auto;
   text-align: left;
   color: #37123C;
+  font-family: 'Raleway', sans-serif;
 }
 
 .Projects-header {
@@ -24,9 +25,23 @@
 
 .Projects-text {
   font-size: 2em;
-  font-family: 'Raleway', sans-serif;
 }
 
-.Projects-illustration {
+.Projects-thumbnail {
+  height: auto;
+  width: 300px;
+  margin: 25px auto;
+}
 
+@media only screen and (min-width: 768px) {
+
+  .Projects-header {
+    padding: 0 0 0 50px;
+    margin: 10px 0;
+  }
+
+  .Projects-text {
+    padding: 5px 50px;
+    margin: 10px 0;
+  }
 }

@@ -6,7 +6,8 @@
     "firebase": "^3.8.0",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-svg-loader": "^1.1.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
@@ -18,7 +19,6 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app",
     "extends": "airbnb"
   },
   "repository": {

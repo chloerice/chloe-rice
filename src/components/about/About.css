@@ -16,17 +16,17 @@
   height: auto;
   text-align: left;
   color: #A99F96;
+  font-family: 'Raleway', sans-serif;
 }
 
 .About-header {
   font-size: 7vmin;
   font-family: 'Londrina Shadow', cursive;
-  margin-left: 10px;
+  margin: 10px
 }
 
 .About-text {
   font-size: 1.5em;
-  font-family: 'Raleway', sans-serif;
   line-height: 1.25em;
   padding: 10px;
   margin: 0px;
@@ -36,11 +36,12 @@
 
   .About-header {
     padding: 0 0 0 50px;
+    margin: 10px 0;
   }
 
   .About-text {
     padding: 5px 50px;
-    margin: 10px;
+    margin: 10px 0;
   }
 }
 
@@ -51,15 +52,28 @@ and (max-device-width: 374px) {
 
   .About-text {
     font-size: 1.25em;
-    font-family: 'Raleway', sans-serif;
     z-index: 10;
     position: relative;
     line-height: 1.25em;
   }
 }
 
-.mobile-illustration {
+.About-illustration {
+  margin-top: 15px;
+  padding: 0 35px;
+}
+
+.me {
+  padding-top: 60px;
+}
+
+.About-mobile-illustration {
   z-index: 10;
   position: relative;
-  margin: 15px;
+  padding-top: 15px;
+}
+
+.illustration {
+  width: 90vw;
+  margin: 0 auto;
 }

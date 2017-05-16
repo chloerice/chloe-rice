@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Glyphicon, Image } from 'react-bootstrap'
+
 import './Footer.css'
 import twitter from '../../img/social/twitter.svg'
 import twitterHover from '../../img/social/twitter-hover.svg'
@@ -30,7 +31,6 @@ export default class Footer extends Component {
   }
 
   render() {
-    let hovering = this.state.hovering
     return (
       <Row id='Contact'>
         <footer>
@@ -39,16 +39,16 @@ export default class Footer extends Component {
               <Image
                 className="icon"
                 src={this.state.linkedInHover ? linkedInHover : linkedIn}
-                alt="link to Chloe's LinkedIn profile"
+                alt="a link to Chloe's LinkedIn profile"
                 onMouseEnter={this.handleHover('linkedIn')}
                 onMouseLeave={this.handleHover('linkedIn')}
               />
             </a>
-            <a id='mail' href="mailto:chloe.mi.rice@gmail.com">
+            <a id='mail' href="mailto:hello@chloe-rice.com">
               <Image
                 className="icon"
                 src={this.state.mailHover ? mailHover : mail}
-                alt="link to Chloe's email"
+                alt="a link to email Chloe"
                 onMouseEnter={this.handleHover('mail')}
                 onMouseLeave={this.handleHover('mail')}
               />
@@ -57,7 +57,7 @@ export default class Footer extends Component {
               <Image
                 className="icon"
                 src={this.state.githubHover ? githubHover : github}
-                alt="link to Chloe's GitHub repositories"
+                alt="a link to Chloe's GitHub repositories"
                 onMouseEnter={this.handleHover('github')}
                 onMouseLeave={this.handleHover('github')}
               />
@@ -66,7 +66,7 @@ export default class Footer extends Component {
               <Image
                 className="icon"
                 src={this.state.instagramHover ? instagramHover : instagram}
-                alt="link to Chloe's Instagram account"
+                alt="a link to Chloe's Instagram account"
                 onMouseEnter={this.handleHover('instagram')}
                 onMouseLeave={this.handleHover('instagram')}
               />
@@ -75,7 +75,7 @@ export default class Footer extends Component {
               <Image
                 className="icon"
                 src={this.state.twitterHover ? twitterHover : twitter}
-                alt="link to Chloe's Twitter account"
+                alt="a link to Chloe's Twitter account"
                 onMouseEnter={this.handleHover('twitter')}
                 onMouseLeave={this.handleHover('twitter')}
               />
