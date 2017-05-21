@@ -23,7 +23,7 @@ const Projects = props => (
           </Col>
           <Col xsHidden smHidden md={6} lg={6}>
             <div className='projectDemoWrapper'>
-              <iframe className='projectDemo' src='http://animalapparel.herokuapp.com'/>
+              <iframe className='projectDemo' src='https://animalapparel.herokuapp.com'/>
             </div>
           </Col>
           {/* mobile */}
