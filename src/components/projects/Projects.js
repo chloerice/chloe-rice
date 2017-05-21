@@ -15,7 +15,19 @@ const Projects = props => (
           </Col>
         </Row>
         <Row>
-          <Col  xs={12} sm={6} md={6} lg={6}>
+          {/* desktop/tablet */}
+          <Col xsHidden smHidden md={6} lg={6}>
+            <div className='projectDemoWrapper'>
+              <iframe className='projectDemo' src='https://bodhi.community/'/>
+            </div>
+          </Col>
+          <Col xsHidden smHidden md={6} lg={6}>
+            <div className='projectDemoWrapper'>
+              <iframe className='projectDemo' src='http://animalapparel.herokuapp.com'/>
+            </div>
+          </Col>
+          {/* mobile */}
+          <Col xs={12} sm={6} mdHidden lgHidden>
             <Image
               className='Projects-thumbnail'
               responsive
@@ -23,7 +35,7 @@ const Projects = props => (
               src={bodhiMap}
             />
           </Col>
-          <Col xs={12} sm={6} md={6} lg={6}>
+          <Col xs={12} sm={6} mdHidden lgHidden>
             <Image
               className='Projects-thumbnail'
               responsive

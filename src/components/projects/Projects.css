@@ -1,3 +1,5 @@
+@import "/../../img/iphone.svg";
+
 #Projects::before {
   width: 0;
   height: 0;
@@ -44,4 +46,27 @@
     padding: 5px 50px;
     margin: 10px 0;
   }
+}
+
+.projectDemoWrapper {
+  color: white;
+  background: url("../../img/iphone.svg") no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 600px;
+  width: auto;
+  margin: 35px;
+}
+
+.projectDemo {
+  -webkit-transform: scale(0.76);
+  -webkit-transform-origin: 0 0;
+  position: absolute;
+  top: 92px;
+  left: 65px;
+  width: 405px;
+  height: 618px;
+  border: none;
 }

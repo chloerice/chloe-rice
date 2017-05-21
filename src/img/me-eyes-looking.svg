@@ -10,7 +10,7 @@
 		<circle fill="#231007" stroke="#000000" stroke-miterlimit="10" cx="295.179" cy="214.283" r="8.341"/>
 		<g>
 			<g>
-				<ellipse transform="matrix(-0.247 0.969 -0.969 -0.247 578.6459 -21.7486)" cx="297.773" cy="213.951" rx="1.8" ry="2.2"/>
+				<ellipse transform="matrix(0.969 0.247 -0.247 0.969 62.0726 -66.9229)" cx="297.777" cy="213.948" rx="2.2" ry="1.8"/>
 			</g>
 			<g>
 				<path fill="#FFFFFF" d="M299.752,214.714c-0.126,0.543-0.826,0.844-1.562,0.673c-0.736-0.171,0.662-0.31,0.788-0.853
@@ -22,7 +22,7 @@
 		<circle fill="#231007" stroke="#000000" stroke-miterlimit="10" cx="206.179" cy="214.283" r="8.341"/>
 		<g>
 			<g>
-				<ellipse transform="matrix(-0.247 0.969 -0.969 -0.247 467.6585 64.4921)" cx="208.772" cy="213.949" rx="1.8" ry="2.2"/>
+				<ellipse transform="matrix(0.969 0.247 -0.247 0.969 59.3146 -44.939)" cx="208.775" cy="213.947" rx="2.2" ry="1.8"/>
 			</g>
 			<g>
 				<path fill="#FFFFFF" d="M210.752,214.714c-0.126,0.543-0.826,0.844-1.562,0.673s0.662-0.31,0.788-0.853
@@ -1285,8 +1285,8 @@
 				c1.81,1.418,2.448,5.064,0.563,7.47"/>
 		</g>
 		<g>
-			<path fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M272.35,205.751
-				c0.28,0.219,5.42,1.56,1.805,6.174"/>
+			<path fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M273.201,205.641
+				c0.28,0.219,2.666,0.951,2.052,5.282"/>
 			<path fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M270.354,214.452"/>
 			<path fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M269.709,208.055"/>
 			<path fill="none" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" d="M272.137,206.418
@@ -1567,7 +1567,7 @@
 	<ellipse fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="263.699" cy="352.519" rx="0.203" ry="0.281"/>
 	<ellipse fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="268.699" cy="172.519" rx="0.203" ry="0.281"/>
 	<ellipse fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="284.699" cy="307.519" rx="0.203" ry="0.281"/>
-	
-		<ellipse transform="matrix(-0.7579 -0.6524 0.6524 -0.7579 234.4909 640.3889)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="236.076" cy="276.682" rx="0.527" ry="0.176"/>
+	<path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M235.961,276.809c-0.221-0.19-0.223-0.317-0.159-0.39
+		c0.063-0.074,0.169-0.066,0.389,0.123c0.221,0.19,0.176,0.322,0.112,0.396C236.24,277.012,236.182,276.999,235.961,276.809z"/>
 </g>
 </svg>
