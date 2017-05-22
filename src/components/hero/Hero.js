@@ -6,7 +6,6 @@ import meEyesLooking from '../../img/me-eyes-looking.svg'
 import macBook from '../../img/macbook.svg'
 import mobileHero from '../../img/mobile-hero.svg'
 import './Hero.css'
-import resume from '../../../public/Chloe_Rice.pdf'
 
 export default class Hero extends Component {
 
@@ -59,17 +58,12 @@ export default class Hero extends Component {
                 className='Hero-illustration'
                 responsive
                 src={macBook}
-                alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
+                alt='An interactive illustration of Chloe and her MacBook.'
               />
-              <p className='Hero-text'>
-                As a full stack developer, I build delightfully fast and interactive user experiences for web and mobile. My specialities are Node.js and React.js.
-              </p>
-              <p className='Hero-text'>
-                I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with. <a href={resume} target='_blank'>This</a> is me on paper.
-              </p>
-              <p className='Hero-text'>
-                I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
-              </p>
+              <h2 className='Hero-text'>Oh hai, I'm Chloé!</h2>
+              <h2 className='Hero-text'>
+                I build delightfully interactive user experiences for the web. My specialities are Node.js and React.js.
+              </h2>
             </Col>
 
             {/* TABLET */}
@@ -82,19 +76,14 @@ export default class Hero extends Component {
                 onTouchEnd={this.chloeLookForward}
                 responsive
                 src={macBook}
-                alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
+                alt='An interactive illustration of Chloe and her MacBook.'
               />
             </Col>
             <Col xsHidden sm={12} mdHidden lgHidden>
-              <p className='tablet Hero-text'>
-                As a full stack developer, I build delightfully fast and interactive user experiences for web and mobile. My specialities are Node.js and React.js.
-              </p>
-              <p className='tablet Hero-text'>
-                I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with. <a href={resume}>This</a> is me on paper.
-              </p>
-              <p className='tablet Hero-text'>
-                I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
-              </p>
+              <h2 className='tablet Hero-text'>Oh hai, I'm Chloé!</h2>
+              <h2 className='tablet Hero-text'>
+                I build delightfully interactive user experiences for the web. My specialities are Node.js and React.js.
+              </h2>
             </Col>
 
             {/* MOBILE*/}
@@ -102,17 +91,12 @@ export default class Hero extends Component {
               <Image
                 responsive
                 src={mobileHero}
-                alt='An interactive illustration of some of Chloe`s favorite things: her dogs Twirl and Ray, her sewing machine, bike, MacBook, and an assortment of fruit.'
+                alt='An interactive illustration of Chloe and her MacBook.'
               />
-            <p className='mobile Hero-text'>
-                I build delightfully fast and interactive user experiences for web and mobile. My specialties are Node.js and React.js.
-              </p>
-              <p className='mobile Hero-text'>
-                I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with. <a href={resume} target='_blank'>This</a> is me on paper.
-              </p>
-              <p className='mobile Hero-text'>
-                I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
-              </p>
+              <h2 className='mobile Hero-text'>Oh hai, I'm Chloé!</h2>
+              <h2 className='mobile Hero-text'>
+                I build delightfully interactive user experiences for the web. My specialities are Node.js and React.js.
+              </h2>
             </Col>
           </Row>
         </Col>

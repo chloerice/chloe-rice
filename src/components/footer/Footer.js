@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Glyphicon, Image } from 'react-bootstrap'
+import { Row, Col, Glyphicon, Image } from 'react-bootstrap'
 
 import './Footer.css'
 import twitter from '../../img/social/twitter.svg'
@@ -12,6 +12,7 @@ import instagram from '../../img/social/instagram.svg'
 import instagramHover from '../../img/social/instagram-hover.svg'
 import mail from '../../img/social/mail.svg'
 import mailHover from '../../img/social/mail-hover.svg'
+import resume from '../../../public/Chloe_Rice.pdf'
 
 export default class Footer extends Component {
   constructor(props) {
@@ -34,6 +35,12 @@ export default class Footer extends Component {
     return (
       <Row id='Contact'>
         <footer>
+          <p className='Contact-text'>
+            I’m looking for a collaborative, cross-functional, user-centered team to learn from and solve problems with. <a href={resume} target='_blank'>This</a> is me on paper.
+          </p>
+          <p className='Contact-text'>
+            I’m always on the lookout for side projects that matter and good conversation. Don’t hesitate to reach out!
+          </p>
           <div className="icon-wrapper">
             <a id='linked-in' href="https://www.linkedin.com/in/chloemrice" target="_blank">
               <Image
@@ -82,7 +89,7 @@ export default class Footer extends Component {
             </a>
           </div>
           <p>
-            Made with
+            Coded & Illustrated with
             <Glyphicon glyph='heart'>
               <span className='sr-only'>love</span>
             </Glyphicon>
