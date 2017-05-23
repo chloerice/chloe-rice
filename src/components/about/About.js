@@ -20,7 +20,7 @@ const About = props => (
             I believe in a free and open web, growing food over lawns, 80s workout tapes over gyms, bikes over cars, and never wearing pants you can’t do a roundhouse kick in.
           </p>
           <p className='About-text'>
-            When I’m not coding, I love creating whimsical landscapes, undercover unitards, and vegan deliciousness for the obscurely allergic. My favorite pastimes are running with my husky Ray, dancing with my blue pit Twirl, and eating/growing/hunting fruit.
+            When I’m not coding, I create whimsical landscapes, undercover unitards, and vegan deliciousness for the obscurely allergic. I also love running with my husky Ray, dancing with my blue pit Twirl, and eating, growing, & hunting fruit.
           </p>
         </Col>
       </Row>

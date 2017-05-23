@@ -13,15 +13,30 @@ footer {
   color: #DDA77B;
   vertical-align: middle;
   text-align: center;
-  padding: 30px 0;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 15px;
+}
+
+.Contact-header {
+  font-size: 7vmin;
+  font-family: 'Londrina Shadow', cursive;
+  margin: 25px 10px 10px 10px;
 }
 
 .Contact-text {
-  margin: 15px;
   font-size: 1.25em;
-  max-width: 450px;
+  margin: 10px;
+  text-align: left;
 }
 
+@media only screen and (min-width: 768px) {
+
+  .Contact-text {
+    padding: 5px 50px 5px 70px;
+    margin: 10px auto;
+    max-width: 500px;
+  }
+}
 
 /*  iPhone <= 5 fix (the IE of devices...)  */
 @media only screen
@@ -36,17 +51,6 @@ and (max-device-width: 374px) {
 .icon-wrapper {
   text-align: center;
   margin: 25px auto;
-}
-
-@media only screen and (min-width: 768px) {
-
-  .Contact-text {
-    margin: 15px auto;
-  }
-
-  .icon-wrapper {
-    padding-left: 15px;
-  }
 }
 
 .icon {

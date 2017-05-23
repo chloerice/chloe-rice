@@ -1,6 +1,7 @@
 .navbar-default {
   border: none;
   background: #71677C;
+  height: 75px;
 }
 
 .navbar-default .navbar-brand {
@@ -10,13 +11,30 @@
   margin: 10px 0px 0px 10px;
 }
 
+@media only screen and (min-width: 992px) {
+  .navbar-right {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+  }
+
+  .navbar-default .navbar-brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 75px;
+    margin-right: -10px;
+    font-size: 3.5em;
+  }
+}
+
 /*  tablet fix  */
 @media only screen
 and (min-width: 500px)
 and (max-width: 1024px) {
 
   .navbar-default .navbar-brand {
-    font-size: 4vmin;
+    font-size: 2.5em;
   }
 }
 

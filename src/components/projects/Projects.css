@@ -48,7 +48,7 @@
   }
 }
 
-.projectDemoWrapper {
+.projectSandboxWrapper {
   color: white;
   background: url("../../img/iphone.svg") no-repeat;
   -webkit-background-size: contain;
@@ -60,7 +60,7 @@
   margin: 35px;
 }
 
-.projectDemo {
+.projectSandbox {
   -webkit-transform: scale(0.76);
   -webkit-transform-origin: 0 0;
   position: absolute;
