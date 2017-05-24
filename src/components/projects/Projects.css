@@ -25,17 +25,33 @@
   margin: 10px;
 }
 
-.Projects-text {
+.SingleProject-title {
   font-size: 2em;
+  margin: 10px;
+}
+
+.SingleProject-tagline {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+
+.Projects-text {
+  font-size: 1.25em;
+  margin: 10px
 }
 
 .Projects-thumbnail {
   height: auto;
-  width: 300px;
+  min-width: 280px;
   margin: 25px auto;
 }
 
 @media only screen and (min-width: 768px) {
+  .SingleProject-title {
+    font-size: 4em;
+    margin: 10px;
+    padding: 35px 0 0 35px;
+  }
 
   .Projects-header {
     padding: 0 0 0 50px;
@@ -43,29 +59,39 @@
   }
 
   .Projects-text {
-    padding: 5px 50px;
+    padding: 5px 0 0 50px;
     margin: 10px 0;
+  }
+}
+
+/*  iPhone <= 5 fix (the IE of devices...)  */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 374px) {
+
+  .Projects-text {
+    font-size: 1.25em;
   }
 }
 
 .projectSandboxWrapper {
   color: white;
-  background: url("../../img/iphone.svg") no-repeat;
+  background: url("../../img/iphone.svg") right center no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
   height: 600px;
   width: auto;
-  margin: 35px;
+  margin: 50px;
 }
 
 .projectSandbox {
   -webkit-transform: scale(0.76);
   -webkit-transform-origin: 0 0;
   position: absolute;
-  top: 92px;
-  left: 65px;
+  top: 108px;
+  right: -18px;
   width: 405px;
   height: 618px;
   border: none;

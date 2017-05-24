@@ -1,51 +1,49 @@
-import React, { Component } from 'react'
-import { Row, Col, Carousel } from 'react-bootstrap'
+import React from 'react'
+import { Row, Col, Thumbnail } from 'react-bootstrap'
+import ProjectDescription from './ProjectDescription'
 
 import './Projects.css'
 
-export default class SingleProject extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      index: 0,
-      direction: null
-    }
-  }
+const SingleProject = props => (
+  <Row>
+    {/* desktop/tablet */}
+    <Col xsHidden smHidden md={6} lg={6}>
+      <h1 className='SingleProject-title'>{props.name}</h1>
+      <ProjectDescription
+        mobile={false}
+        showLogin={props.showLogin}
+        urls={props.urls}
+        description={props.description}
+        responsibilities={props.responsibilities}
+      />
+    </Col>
+    <Col className='SingleProject-demo' xsHidden smHidden md={6} lg={6}>
+      <div className='projectSandboxWrapper'>
+        <iframe className='projectSandbox' src={props.urls.app}/>
+      </div>
+    </Col>
 
-  handleSelect = (index, event) => {
-    const {direction} = event
-    this.setState({index, direction})
-  }
+    {/* mobile */}
+    <Col xs={12} sm={6} mdHidden lgHidden>
+      <h1 className='SingleProject-title'>{props.name}</h1>
+      <ProjectDescription
+        mobile={true}
+        showLogin={props.showLogin}
+        urls={props.urls}
+        description={props.description}
+        responsibilities={props.responsibilities}
+      />
+    </Col>
+    <Col xs={12} sm={6} mdHidden lgHidden>
+      <Thumbnail
+        className='Projects-thumbnail'
+        responsive
+        href={props.urls.app}
+        alt={`Photo of and link to project: ${props.name}`}
+        src={props.screenshot}
+      />
+    </Col>
+  </Row>
+)
 
-  render() {
-    return (
-      <Carousel.Item>
-        <Row>
-          <Col xs={12} sm={6} md={6} lg={6}>
-            <h1 className='SingleProject-header'>{this.props.name}</h1>
-            <h2 className='SingleProject-text'>
-              {this.props.description}
-            </h2>
-          </Col>
-          {/* desktop/tablet */}
-          <Col className='SingleProject-demo' xsHidden sm={6} md={6} lg={6}>
-            <a href={this.props.repoUrl}><p>GitHub Repo</p></a>
-            <a href={this.props.liveUrl}><p>Live App</p></a>
-            <div className='projectSandboxWrapper'>
-              <iframe className='projectSandbox' src='https://bodhi.community/'/>
-            </div>
-          </Col>
-          {/* mobile */}
-          <Col xs={12} smHidden mdHidden lgHidden>
-            <Image
-              className='Projects-thumbnail'
-              responsive
-              alt='Link to project: Animal Apparel'
-              src={this.props.screenshot}
-            />
-          </Col>
-        </Row>
-      </Carousel.Item>
-    )
-  }
-}
+export default SingleProject
