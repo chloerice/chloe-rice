@@ -37,7 +37,6 @@ const SingleProject = props => (
     <Col xs={12} sm={6} mdHidden lgHidden>
       <Thumbnail
         className='Projects-thumbnail'
-        responsive
         href={props.urls.app}
         alt={`Photo of and link to project: ${props.name}`}
         src={props.screenshot}

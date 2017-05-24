@@ -8,12 +8,10 @@ const ProjectDescription = props => (
     </h2>
     <p>Responsible for:</p>
     <ul>
-      {props.responsibilities.map(resp => <li><p>{resp}</p></li>)}
+      {props.responsibilities.map((resp, idx) => <li key={idx}><p>{resp}</p></li>)}
     </ul>
-    <p>
-        <a href={props.urls.repo} target='_blank'><p>GitHub Repo</p></a>
-        <a href={props.urls.app} target='_blank'><p>Live App</p></a>
-      </p>
+      <a href={props.urls.repo} target='_blank'><p>GitHub Repo</p></a>
+      <a href={props.urls.app} target='_blank'><p>Live App</p></a>
     {
       props.mobile
         ? null
