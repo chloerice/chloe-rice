@@ -5,12 +5,12 @@ body {
 
 a, a:hover, a:focus {
   text-decoration: none;
-  color: #5CEDAE;
+  color: #42BA97;
   cursor: pointer;
 }
 
 a {
-  color: #42BA97;
+  color: #5CEDAE;
 }
 
 .container-fluid {
