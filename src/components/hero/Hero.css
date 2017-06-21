@@ -1,8 +1,8 @@
 #Home {
-  background: #71677C;
+  background: #42BA97;
   height: auto;
   text-align: left;
-  color: #DDA77B;
+  color: antiquewhite;
   padding: 80px 25px 10px 25px;
   overflow-y: visible;
   font-family: 'Londrina Shadow', cursive;
@@ -12,6 +12,10 @@
   padding: 10px 25px;
   min-height: 48vh;
   height: auto;
+}
+
+.Hero-illustration img {
+  max-height: 530px;
 }
 
 .Hero-text {
