@@ -5,7 +5,7 @@
   border-style: solid;
   border-width: 0 85px 85px 95vw;
   border-color: transparent transparent #945D5E transparent;
-  background: #42BA97;
+  background: #FAEBD7;
   -webkit-transform:rotate(360deg)
   /* ^improves anti-aliasing */
 }
@@ -15,7 +15,7 @@
   background: #945D5E;
   height: auto;
   text-align: left;
-  color: antiquewhite;
+  color: #FAEBD7;
   font-family: 'Raleway', sans-serif;
 }
 
