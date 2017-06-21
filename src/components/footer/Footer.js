@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Glyphicon } from 'react-bootstrap'
 import SocialNav from './SocialNav'
 import './Footer.css'
-import resume from '../../../public/Chloe_Rice.pdf'
+import resume from '../../../public/ChloeRice.pdf'
 
 const Footer = () => (
   <footer>
