@@ -45,7 +45,7 @@ export default class SocialNav extends Component {
             />
             <SocialIcon
               name="mail"
-              href="mailto:hello@chloe-rice.com"
+              href="mailto:chloe.mi.rice@gmail.com"
               hovering={this.state.mailHover}
               src={{hoverIcon: mailHover, icon: mail}}
               altText="a link to email Chloe"
