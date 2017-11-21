@@ -25,13 +25,19 @@
   margin: 10px;
 }
 
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .SingleProject-title {
   font-size: 2em;
   margin: 10px;
 }
 
 .SingleProject-tagline {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 0 0 10px 0;
 }
 
@@ -50,7 +56,7 @@
   .SingleProject-title {
     font-size: 4em;
     margin: 10px;
-    padding: 35px 0 0 35px;
+    padding: 15px 0 0 35px;
   }
 
   .Projects-header {
@@ -61,6 +67,10 @@
   .Projects-text {
     padding: 5px 0 0 50px;
     margin: 10px 0;
+  }
+  
+  .Projects-text:last-child {
+    margin-bottom: 2em;
   }
 }
 
@@ -83,16 +93,51 @@ and (max-device-width: 374px) {
   background-size: contain;
   height: 600px;
   width: auto;
-  margin: 50px;
+  margin: 35px 50px 50px;
 }
 
 .projectSandbox {
-  -webkit-transform: scale(0.76);
-  -webkit-transform-origin: 0 0;
+  transform: scale(0.76);
+  transform-origin: 0 0;
   position: absolute;
-  top: 108px;
+  top: 93px;
   right: -18px;
   width: 405px;
   height: 618px;
   border: none;
+}
+
+@media only screen and (min-height: 1600px) {
+  #Projects::before {
+    border-width: 0 100vw 16em 12em;
+  }
+  .Projects-header {
+    font-size: 8em;
+    margin-top: .75em;
+  }
+  .Projects-text {
+    font-size: 3em;
+  }
+  .SingleProject-title {
+    font-size: 8em;
+  }
+  .SingleProject-tagline {
+    font-size: 1.5em;
+    margin: 0 0 .75em 0;
+  }
+  .projectSandboxWrapper {
+    height: 1200px;
+    width: auto;
+    margin: 50px;
+  }
+
+  .projectSandbox {
+    transform: scale(1.7);
+    transform-origin: 0 0;
+    position: absolute;
+    top: 9.75em;
+    right: 24.75em;
+    width: 365px;
+    height: 572px;
+  }
 }

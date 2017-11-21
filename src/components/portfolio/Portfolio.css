@@ -18,3 +18,14 @@ a {
   overflow: hidden;
   background: #37123C;
 }
+
+@media only screen and (min-width: 768px) {
+  .img-responsive {
+    min-height: 48vh;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-height: 1600px) {
+  
+}

@@ -44,3 +44,15 @@ and (max-device-width: 374px) {
   padding-top: 25px;
   min-height: 0;
 }
+
+@media only screen and (min-height: 1600px) {
+  #Home {
+    padding-top: 14em;
+  }
+  .Hero-illustration img {
+    max-height: 40vw;
+  }
+  .Hero-text {
+    font-size: 6em;
+  }
+}

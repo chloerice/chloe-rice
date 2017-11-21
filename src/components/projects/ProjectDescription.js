@@ -10,17 +10,14 @@ const ProjectDescription = props => (
     <ul>
       {props.responsibilities.map((resp, idx) => <li key={idx}><p>{resp}</p></li>)}
     </ul>
-      <a href={props.urls.repo} target='_blank'><p>GitHub Repo</p></a>
-      <a href={props.urls.app} target='_blank'><p>Live App</p></a>
     {
-      props.mobile
-        ? null
-        : <p>Play in the sandbox  <Glyphicon glyph='arrow-right' /></p>
-    }
-    {
-      props.showLogin
-      ? <p>Log in with email: test@test.test, password: testtest</p>
-      : null
+      !props.mobile && 
+      <p>
+        {`Play in the sandbox with `} 
+        {`email `}<strong>test@test.test</strong>
+        {` and password `}<strong>test </strong>     
+        <Glyphicon glyph='arrow-right' />
+      </p>
     }
   </div>
 )

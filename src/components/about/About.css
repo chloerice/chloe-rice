@@ -33,9 +33,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-
+  #About::before {
+    width: 100%;
+  }
+  
   .About-header {
-    padding: 0 0 0 50px;
+    padding: 35px 0 0 50px;
     margin: 10px 0;
   }
 
@@ -76,4 +79,17 @@ and (max-device-width: 374px) {
 .illustration {
   width: 90vw;
   margin: 0 auto;
+}
+
+@media only screen and (min-height: 1600px) {
+  #About::before {
+    border-width: 0 10em 18em 95vw;
+  }
+  .About-header {
+    font-size: 8em;
+    margin-top: .75em;
+  }
+  .About-text {
+    font-size: 4em;
+  }
 }

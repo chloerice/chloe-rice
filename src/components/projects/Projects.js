@@ -1,13 +1,13 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-import animalApparelHome from './animalapparel-home.png'
-import bodhiMap from './bodhi-map.png'
-import './Projects.css'
-import SingleProject from './SingleProject'
-import { bodhi, animalApparel } from './project-data'
 
-const b = bodhi()
-const aa = animalApparel()
+import SingleProject from './SingleProject'
+import { colorForCode } from './project-data'
+import c4cHome from './colorforcode-home.jpg'
+
+import './Projects.css'
+
+const c4c = colorForCode()
 
 const Projects = props => (
   <Row id='Projects'>
@@ -20,20 +20,12 @@ const Projects = props => (
       <Row>
         <Col xs={12} sm={12} md={12} lg={12}>
           <SingleProject
-            name='Bodhi'
-            screenshot={bodhiMap}
-            showLogin={true}
-            urls={b.urls}
-            description={b.description}
-            responsibilities={b.responsibilities}
-          />
-          <SingleProject
-            name='Animal Apparel'
-            showLogin={false}
-            screenshot={animalApparelHome}
-            urls={aa.urls}
-            description={aa.description}
-            responsibilities={aa.responsibilities}
+            name="Color for Code"
+            showLogin
+            screenshot={c4cHome}
+            urls={c4c.urls}
+            description={c4c.description}
+            responsibilities={c4c.responsibilities}
           />
         </Col>
       </Row>

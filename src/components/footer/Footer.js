@@ -14,8 +14,8 @@ const Footer = () => (
         </Row>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <p className='Contact-text'>
-              I’m currently looking for a team to learn from and solve problems with. Looking for someone gritty and meticulous? I'm that somebody. If you're cross-functional and user-centered, I'm interested.
+            <p className="Contact-text">
+              I’m currently looking for a team to learn from and solve problems with. Looking for someone gritty and meticulous? I’m that somebody. If you’re cross-functional and user-centered, I’m interested.
             </p>
             <p className='Contact-text'>
               I’m always on the lookout for side projects that matter and good conversation. Let’s talk!
@@ -25,7 +25,7 @@ const Footer = () => (
         <SocialNav />
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <p>
+            <p className='madeBy'>
               Coded & Illustrated with
               <Glyphicon glyph='heart'>
                 <span className='sr-only'>love</span>

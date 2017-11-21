@@ -14,7 +14,7 @@ footer {
   vertical-align: middle;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 
 .Contact-header {
@@ -25,17 +25,36 @@ footer {
 
 .Contact-text {
   font-size: 1.25em;
-  margin: 10px;
+  margin: .75em auto;
   text-align: left;
 }
 
-@media only screen and (min-width: 768px) {
+.icon-wrapper {
+  width: inherit;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 25px auto;
+}
 
-  .Contact-text {
-    padding: 5px 50px 5px 70px;
-    margin: 10px auto;
-    max-width: 500px;
-  }
+.icon svg {
+  height: 3em;
+  width: 3em;
+}
+
+.icon path {
+  transition: .3s ease-in-out;
+  fill: #DDA77B;
+}
+
+.icon:hover path {
+  fill: #72C19F;
+}
+
+.glyphicon-heart {
+  color: #945D5E;
+  padding: 0 8px;
 }
 
 /*  iPhone <= 5 fix (the IE of devices...)  */
@@ -48,18 +67,40 @@ and (max-device-width: 374px) {
   }
 }
 
-.icon-wrapper {
-  text-align: center;
-  margin: 25px auto;
+@media only screen and (min-width: 768px) {
+  .Contact-text {
+    padding: 5px 50px 5px 70px;
+    margin: 10px auto;
+    max-width: 500px;
+  }
+  .icon-wrapper {
+    max-width: 30vw;
+  }
 }
 
-.icon {
-  display: inline;
-  margin: 0px 5px;
-  transition: 500ms ease-in-out;
-}
+@media only screen and (min-height: 1600px) {
+  #Contact::before {
+    border-width: 20em 50vw 0 50vw;
+  }
+  .Contact-header {
+    font-size: 8em;
+    margin: 1em .75em 0;
+  }
 
-.glyphicon-heart {
-  color: #945D5E;
-  padding: 0 8px;
+  .Contact-text {
+    font-size: 4em;
+    margin: .75em auto;
+    max-width: 45vw;
+  }
+  .icon {
+    margin: 0px 2em;
+  }
+  .icon svg {
+    height: 4vmax;
+    width: 4vmax;
+  }
+  .madeBy {
+    font-size: 4em;
+    padding: 1em 0 2em;
+  }
 }
