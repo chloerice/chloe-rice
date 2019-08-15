@@ -1,11 +1,11 @@
 #Home {
-  background: #FAEBD7;
+  background: #faebd7;
   height: auto;
   text-align: left;
-  color: #42BA97;
+  color: #351bde;
   padding: 80px 25px 10px 25px;
   overflow-y: visible;
-  font-family: 'Londrina Shadow', cursive;
+  font-family: "Londrina Shadow", cursive;
 }
 
 .Hero-illustration {
@@ -30,10 +30,7 @@
 }
 
 /*  iPhone <= 5 fix (the IE of devices...)  */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 374px) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
   .Hero-text {
     font-size: 2em;
   }

@@ -1,15 +1,14 @@
 .navbar-default {
   border: none;
-  background: #FAEBD7;
+  background: #faebd7;
   height: 75px;
 }
 
 .navbar-default .navbar-brand {
-  color: #42BA97;
-  font-family: 'Londrina Shadow', cursive;
+  color: #351bde;
+  font-family: "Londrina Shadow", cursive;
   font-size: 7vmin;
   margin: 10px 0px 0px 10px;
-  transition: color .3s ease-in-out;
 }
 
 @media only screen and (min-width: 992px) {
@@ -29,26 +28,27 @@
   }
 }
 
-/*  tablet fix  */
-@media only screen
-and (min-width: 500px)
-and (max-width: 1024px) {
+.navbar-default .navbar-brand:hover {
+  color: #351bde;
+}
 
+/*  tablet fix  */
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
   .navbar-default .navbar-brand {
     font-size: 2.5em;
   }
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #42BA97;
-  font-family: 'Raleway', sans-serif;
+  color: #351bde;
+  font-family: "Raleway", sans-serif;
   margin: 10px;
-  transition: color .3s ease-in-out;
+  transition: font-weight 0.1s ease-in-out;
 }
 
-.navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #5CEDAE;
+  color: #351bde;
+  font-weight: bolder;
 }
 
 .navbar-default .navbar-toggle,
@@ -60,7 +60,7 @@ and (max-width: 1024px) {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background: #42BA97;
+  background: #351bde;
 }
 
 .navbar-fixed-top .navbar-collapse {
@@ -68,24 +68,24 @@ and (max-width: 1024px) {
   font-size: larger;
   max-height: none;
   border: none;
-  background: #FAEBD7;
+  background: #faebd7;
 }
 
 @media only screen and (min-height: 1600px) {
   .navbar-default {
     height: 12em;
   }
-  
+
   .navbar-default .navbar-brand {
     font-size: 8em;
-    margin: .5em 10px;
+    margin: 0.5em 10px;
   }
-  
+
   .navbar-default .navbar-nav > li > a {
-    margin: .75em;
+    margin: 0.75em;
     padding: 1em;
   }
-  
+
   .navbar-fixed-top .navbar-collapse {
     font-size: 3em;
   }

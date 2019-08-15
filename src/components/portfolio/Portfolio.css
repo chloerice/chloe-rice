@@ -3,20 +3,22 @@ body {
   padding: 0;
 }
 
-a, a:hover, a:focus {
-  text-decoration: none;
-  color: #42BA97;
+a:hover,
+a:focus {
+  text-decoration: underline;
+  font-style: italic;
   cursor: pointer;
+  color: currentColor;
 }
 
 a {
-  color: #5CEDAE;
+  color: currentColor;
 }
 
 .container-fluid {
   width: 100%;
   overflow: hidden;
-  background: #37123C;
+  background: #130e60;
 }
 
 @media only screen and (min-width: 768px) {
@@ -27,5 +29,4 @@ a {
 }
 
 @media only screen and (min-height: 1600px) {
-  
 }

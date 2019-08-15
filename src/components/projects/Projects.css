@@ -5,23 +5,22 @@
   height: 0;
   border-style: solid;
   border-width: 0 100vw 100px 85px;
-  border-color: transparent transparent #DDA77B transparent;
-  background: #945D5E;
-  -webkit-transform:rotate(360deg)
-  /* ^improves anti-aliasing */;
+  border-color: transparent transparent #dda77b transparent;
+  background: #945d5e;
+  -webkit-transform: rotate(360deg) /* ^improves anti-aliasing */;
 }
 
 #Projects {
-  background: #DDA77B;
+  background: #dda77b;
   height: auto;
   text-align: left;
-  color: #37123C;
-  font-family: 'Raleway', sans-serif;
+  color: #130e60;
+  font-family: "Raleway", sans-serif;
 }
 
 .Projects-header {
   font-size: 7vmin;
-  font-family: 'Londrina Shadow', cursive;
+  font-family: "Londrina Shadow", cursive;
   margin: 10px;
 }
 
@@ -43,7 +42,7 @@
 
 .Projects-text {
   font-size: 1.25em;
-  margin: 10px
+  margin: 10px;
 }
 
 .Projects-thumbnail {
@@ -68,17 +67,14 @@
     padding: 5px 0 0 50px;
     margin: 10px 0;
   }
-  
+
   .Projects-text:last-child {
     margin-bottom: 2em;
   }
 }
 
 /*  iPhone <= 5 fix (the IE of devices...)  */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 374px) {
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
   .Projects-text {
     font-size: 1.25em;
   }
@@ -113,7 +109,7 @@ and (max-device-width: 374px) {
   }
   .Projects-header {
     font-size: 8em;
-    margin-top: .75em;
+    margin-top: 0.75em;
   }
   .Projects-text {
     font-size: 3em;
@@ -123,7 +119,7 @@ and (max-device-width: 374px) {
   }
   .SingleProject-tagline {
     font-size: 1.5em;
-    margin: 0 0 .75em 0;
+    margin: 0 0 0.75em 0;
   }
   .projectSandboxWrapper {
     height: 1200px;
