@@ -1,5 +1,5 @@
 import React from "react";
-import { Glyphicon } from "react-bootstrap";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 const ProjectDescription = ({ mobile, description, responsibilities }) => (
   <div className="Projects-text">
@@ -19,7 +19,9 @@ const ProjectDescription = ({ mobile, description, responsibilities }) => (
         <strong>test@test.test</strong>
         {` and password `}
         <strong>test </strong>
-        <Glyphicon glyph="arrow-right" />
+        <span className="right-arrow">
+          <FaAngleDoubleRight />
+        </span>
       </p>
     )}
   </div>

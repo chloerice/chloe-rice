@@ -14,7 +14,7 @@ const Projects = props => (
     <Col xs={12} sm={12} md={12} lg={12}>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12}>
-          <h1 className="Projects-header">Latest Projects</h1>
+          <h1 className="Projects-header">Past projects</h1>
         </Col>
       </Row>
       <Row>

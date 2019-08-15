@@ -11,7 +11,7 @@ const About = props => (
     <Col xs={12} sm={12} md={12} lg={12}>
       <Row>
         <Col xs={12} sm={12} md={12} lg={12}>
-          <h1 className="About-header">About Me</h1>
+          <h1 className="About-header">About me</h1>
         </Col>
       </Row>
       <Row>

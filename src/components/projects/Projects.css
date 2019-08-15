@@ -45,6 +45,11 @@
   margin: 10px;
 }
 
+.right-arrow {
+  position: relative;
+  bottom: -4px;
+}
+
 .Projects-thumbnail {
   height: auto;
   min-width: 280px;

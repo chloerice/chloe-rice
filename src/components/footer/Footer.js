@@ -1,5 +1,6 @@
 import React from "react";
-import { Row, Col, Glyphicon } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import { FaHeart } from "react-icons/fa";
 import SocialNav from "./SocialNav";
 import "./Footer.css";
 
@@ -9,7 +10,7 @@ const Footer = () => (
       <Col xs={12} sm={12} md={12} lg={12}>
         <Row>
           <Col xs={12} sm={12} md={12} lg={12}>
-            <h1 className="Contact-header">Contact Me</h1>
+            <h1 className="Contact-header">Contact me</h1>
           </Col>
         </Row>
         <Row>
@@ -49,9 +50,10 @@ const Footer = () => (
           <Col xs={12} sm={12} md={12} lg={12}>
             <p className="madeBy">
               Coded & Illustrated with
-              <Glyphicon glyph="heart">
+              <span className="heart">
+                <FaHeart />
                 <span className="sr-only">love</span>
-              </Glyphicon>
+              </span>
               by Chloé Rice
             </p>
           </Col>

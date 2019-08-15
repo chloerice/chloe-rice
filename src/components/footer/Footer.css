@@ -53,9 +53,11 @@ footer {
   fill: #72c19f;
 }
 
-.glyphicon-heart {
+.heart {
   color: #945d5e;
-  padding: 0 8px;
+  margin: 6px;
+  position: relative;
+  bottom: -2px;
 }
 
 /*  iPhone <= 5 fix (the IE of devices...)  */
